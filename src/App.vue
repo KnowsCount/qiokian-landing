@@ -1,23 +1,21 @@
 <!--
  * @Date: 16/02/2021 14.17.57 +0800
  * @Author: KnowsCount
- * @LastEditTime: 16/02/2021 15.35.49 +0800
+ * @LastEditTime: 16/02/2021 22.29.48 +0800
  * @FilePath: /qiokian-landing/src/App.vue
 -->
 <template>
-	<NavBar msg="Welcome to Your Vue.js App"/>
-	<Content/>
+	<Home />
+	
 </template>
 
 <script>
-import NavBar from './components/nav-bar'
-import Content from './components/content'
+import Home from './components/home'
 
 export default {
 	name: 'App',
 	components: {
-		NavBar,
-		Content
+		Home
 	}
 }
 </script>
