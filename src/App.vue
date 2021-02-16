@@ -1,26 +1,26 @@
+<!--
+ * @Date: 16/02/2021 14.17.57 +0800
+ * @Author: KnowsCount
+ * @LastEditTime: 16/02/2021 15.35.49 +0800
+ * @FilePath: /qiokian-landing/src/App.vue
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<NavBar msg="Welcome to Your Vue.js App"/>
+	<Content/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/nav-bar'
+import Content from './components/content'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		NavBar,
+		Content
+	}
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
