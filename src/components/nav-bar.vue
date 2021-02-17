@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 14.17.57 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 19.46.13 +0800
+ * @LastEditTime: 17/02/2021 21.05.19 +0800
  * @FilePath: /qiokian-landing/src/components/nav-bar.vue
 -->
 <template>
@@ -12,8 +12,8 @@
 			</a>
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Demo</a></li>
+			<li><a href="https://github.com/KnowsCount/qiokian" target="_blank">GitHub</a></li>
+			<li><a href="https://qiokian.vercel.app" target="_blank">Demo</a></li>
 		</ul>
 		</header>
 		<div class="circle"></div>

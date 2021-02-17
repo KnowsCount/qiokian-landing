@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 15.35.09 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 20.51.52 +0800
+ * @LastEditTime: 17/02/2021 21.43.55 +0800
  * @FilePath: /qiokian-landing/src/components/content.vue
 -->
 
@@ -12,8 +12,11 @@
 				<br />
 				<span>Qiokian!</span>
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="#">Learn More</a>
+			<p>
+				你的 Vue.js 网页想要一个看板娘吗？快快使用 Qiokian!
+				<br />
+				Want a anime figure on your Vue.js webapp? Use Qiokian!
+			</p>
 		</div>
 		<div class="imgBox">
 			<!-- <img class="imgBox" src="../assets/shishiro_botan.png" /> -->
@@ -81,10 +84,16 @@ export default {
 }
 
 .content .textBox p {
+	border-left: 2px solid #333;
+	margin: 24px 0 36px;
 	color: #333;
+/* 	padding-top: 1em;
+	padding-left: 9em; */
+	padding: 12px 16px 12px;
+	margin-left: 9em;
 }
 
-.content .textBox a {
+/* .content .textBox a {
 	text-decoration: none;
 	display: inline-block;
 	margin-top: 20px;
@@ -94,14 +103,14 @@ export default {
 	border-radius: 40px;
 	font-weight: 500;
 	letter-spacing: 1px;
-}
+} */
 
 .content .imgBox {
 	width: 600px;
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 50px;
-	margin-top: 50px; 
+	margin-top: 50px;
 }
 
 .content .imgBox img {
@@ -111,7 +120,7 @@ export default {
 .thumb {
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
+	bottom: 45px;
 	transform: translateX(-50%);
 	display: flex;
 }

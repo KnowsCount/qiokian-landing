@@ -1,20 +1,23 @@
 <!--
  * @Date: 16/02/2021 22.28.28 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 14.09.12 +0800
+ * @LastEditTime: 17/02/2021 20.55.40 +0800
  * @FilePath: /qiokian-landing/src/components/home.vue
 -->
 
 <template>
+	<Qiokian />
 	<NavBar />
 </template>
 
 <script>
 import NavBar from './nav-bar'
+import Qiokian from './qiokian'
 
 export default {
 	components: {
-		NavBar
+		NavBar,
+		Qiokian
 	}
 }
 </script>
