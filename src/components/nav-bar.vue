@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 14.17.57 +0800
  * @Author: KnowsCount
- * @LastEditTime: 16/02/2021 23.01.18 +0800
+ * @LastEditTime: 17/02/2021 15.08.57 +0800
  * @FilePath: /qiokian-landing/src/components/nav-bar.vue
 -->
 <template>
@@ -16,30 +16,27 @@
 			<li><a href="#">Demo</a></li>
 		</ul>
 		</header>
+		<div class="circle"></div>
+		<Content />
 	</section>
 </template>
 
 <script>
+import Content from './content'
+
 export default {
 	name: 'NavBar',
 	props: {
 		msg: String
+	},
+	components: {
+		Content
 	}
 }
 </script>
 
 <style>
 @import url(./app.css);
-section {
-	position: relative;
-	width: 100%;
-	padding: 50px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #fff;
-}
-
 header {
 	position: absolute;
 	top: 0;
@@ -72,4 +69,15 @@ header ul li a {
 	margin-left: 40px;
 	text-decoration: none;
 }
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: green;
+	clip-path: circle(600px at right 800px);
+}
+
 </style>

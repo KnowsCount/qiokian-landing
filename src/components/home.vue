@@ -1,23 +1,20 @@
 <!--
  * @Date: 16/02/2021 22.28.28 +0800
  * @Author: KnowsCount
- * @LastEditTime: 16/02/2021 22.58.24 +0800
+ * @LastEditTime: 17/02/2021 14.09.12 +0800
  * @FilePath: /qiokian-landing/src/components/home.vue
 -->
 
 <template>
 	<NavBar />
-	<Content />
 </template>
 
 <script>
 import NavBar from './nav-bar'
-import Content from './content'
 
 export default {
 	components: {
-		NavBar,
-		Content
+		NavBar
 	}
 }
 </script>
@@ -31,5 +28,15 @@ export default {
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
 }
 </style>
