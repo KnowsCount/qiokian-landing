@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 14.17.57 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 21.05.19 +0800
+ * @LastEditTime: 17/02/2021 22.12.30 +0800
  * @FilePath: /qiokian-landing/src/components/nav-bar.vue
 -->
 <template>
@@ -10,7 +10,8 @@
 			<a href="#">
 				<img class="logo" src="@/assets/logo.png">
 			</a>
-		<ul>
+			<div class="toggle" v-on:click="toggleMenu()"></div>
+		<ul class="navigation">
 			<li><a href="#">Home</a></li>
 			<li><a href="https://github.com/KnowsCount/qiokian" target="_blank">GitHub</a></li>
 			<li><a href="https://qiokian.vercel.app" target="_blank">Demo</a></li>
@@ -28,6 +29,14 @@ export default {
 	name: 'NavBar',
 	components: {
 		Content
+	},
+	methods: {
+		toggleMenu () {
+			let menuToggle = document.querySelector('.toggle')
+			let navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active')
+			navigation.classList.toggle('active')
+		}
 	}
 }
 </script>
