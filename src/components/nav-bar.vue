@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 14.17.57 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 15.08.57 +0800
+ * @LastEditTime: 17/02/2021 19.46.13 +0800
  * @FilePath: /qiokian-landing/src/components/nav-bar.vue
 -->
 <template>
@@ -26,9 +26,6 @@ import Content from './content'
 
 export default {
 	name: 'NavBar',
-	props: {
-		msg: String
-	},
 	components: {
 		Content
 	}
@@ -76,7 +73,7 @@ header ul li a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: green;
+	background: grey;
 	clip-path: circle(600px at right 800px);
 }
 

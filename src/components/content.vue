@@ -1,7 +1,7 @@
 <!--
  * @Date: 16/02/2021 15.35.09 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/02/2021 15.06.06 +0800
+ * @LastEditTime: 17/02/2021 20.51.52 +0800
  * @FilePath: /qiokian-landing/src/components/content.vue
 -->
 
@@ -17,18 +17,18 @@
 		</div>
 		<div class="imgBox">
 			<!-- <img class="imgBox" src="../assets/shishiro_botan.png" /> -->
-			<img class="shishiro" src="../assets/img1.png" />
+			<img class="shishiro" src="../assets/shishiro-botan.png" />
 		</div>
 	</div>
 	<ul class="thumb">
 		<li>
-			<img src="../assets/thumb1.png" alt="thumb-1">
+			<img src="../assets/thumb1.png" alt="thumb-1" @click="imgSlider(require('../assets/shishiro-botan.png'));changeCircleColour('grey')">
 		</li>
 		<li>
-			<img src="../assets/thumb2.png" alt="thumb-2">
+			<img src="../assets/bilibili-33.png" alt="thumb-2" @click="imgSlider(require('../assets/bilibili-33.png'));changeCircleColour('skyblue')">
 		</li>
 		<li>
-			<img src="../assets/thumb3.png" alt="thumb-3">
+			<img src="../assets/kiruya-momochi.png" alt="thumb-3" @click="imgSlider(require('../assets/kiruya-momochi.png'));changeCircleColour('purple')">
 		</li>
 	</ul>
 </template>
@@ -36,11 +36,22 @@
 <script>
 export default {
 	name: 'Content',
+	methods: {
+		imgSlider(image) {
+			document.querySelector('.shishiro').src = image
+		},
+
+		changeCircleColour(colour) {
+			let circle = document.querySelector('.circle')
+			circle.style.background = colour
+		}
+	}
 }
 </script>
 
-<style scoped>
+<style>
 @import url(./app.css);
+
 .content {
 	position: relative;
 	width: 100%;
@@ -78,7 +89,7 @@ export default {
 	display: inline-block;
 	margin-top: 20px;
 	padding: 8px 20px;
-	background: green;
+	background: grey;
 	color: #fff;
 	border-radius: 40px;
 	font-weight: 500;
