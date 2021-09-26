@@ -15,7 +15,7 @@ export default {
 	data() {
 		return {
 			live2d_path:
-				'https://cdn.jsdelivr.net/gh/knowscount/live2d-widget@latest/',
+				'https://cdn.jsdelivr.net/gh/knowscount/live2d-widget@0.8.6/',
 			cdnPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/',
 		}
 	},
